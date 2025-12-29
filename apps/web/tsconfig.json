@@ -1,10 +1,10 @@
 {
-  "extends": "@workspace/typescript-config/nextjs.json",
+  "extends": "@nexteranga/config/typescript/nextjs",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@workspace/ui/*": ["../../packages/ui/src/*"]
+      "@nexteranga/ui/*": ["../../packages/ui/src/*"]
     },
     "plugins": [
       {
