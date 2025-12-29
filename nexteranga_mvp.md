@@ -1,6 +1,6 @@
 # 🚀 NexTerangaStack - MVP Roadmap v2.0
 
-> *"Next-gen authentication monorepo boilerplate with African spirit"*
+> _"Next-gen authentication monorepo boilerplate with African spirit"_
 
 ---
 
@@ -13,6 +13,7 @@
 ## 🎯 Objectif du MVP
 
 Créer un **starter kit monorepo production-ready** permettant aux développeurs de lancer rapidement des applications SaaS avec :
+
 - Architecture monorepo scalable avec Turborepo
 - Authentification complète et sécurisée (Better Auth)
 - Système de paiement unifié pour l'Afrique (pawaPay) + international (Stripe)
@@ -23,20 +24,20 @@ Créer un **starter kit monorepo production-ready** permettant aux développeurs
 
 ## 🛠️ Stack Technique
 
-| Catégorie | Technologie | Pourquoi |
-|-----------|-------------|----------|
-| **Monorepo** | Turborepo + PNPM | Performance, cache, workspaces |
-| **Versioning** | Changesets | Semantic versioning automatique |
-| **Framework** | Next.js 15 (App Router) | Performance, SEO, Server Components |
-| **UI** | shadcn/ui + Tailwind CSS | Composants modernes et personnalisables |
-| **Auth** | Better Auth | Flexible, feature-rich, TypeScript-first |
-| **Database** | Prisma ORM | Support PostgreSQL/MySQL/SQLite |
-| **Emails** | Resend + React Email | Templates React, DX excellent |
-| **Storage** | UploadThing | Intégration facile, CDN inclus |
-| **Paiements** | pawaPay + Stripe + Wave | Mobile Money unifié + Carte bancaire |
-| **Déploiement** | Vercel | CI/CD automatique, monorepo support |
-| **Linting** | Biome | Rapide, tout-en-un (lint + format) |
-| **CI/CD** | GitHub Actions | Tests, releases, déploiements auto |
+| Catégorie       | Technologie              | Pourquoi                                 |
+| --------------- | ------------------------ | ---------------------------------------- |
+| **Monorepo**    | Turborepo + PNPM         | Performance, cache, workspaces           |
+| **Versioning**  | Changesets               | Semantic versioning automatique          |
+| **Framework**   | Next.js 15 (App Router)  | Performance, SEO, Server Components      |
+| **UI**          | shadcn/ui + Tailwind CSS | Composants modernes et personnalisables  |
+| **Auth**        | Better Auth              | Flexible, feature-rich, TypeScript-first |
+| **Database**    | Prisma ORM               | Support PostgreSQL/MySQL/SQLite          |
+| **Emails**      | Resend + React Email     | Templates React, DX excellent            |
+| **Storage**     | UploadThing              | Intégration facile, CDN inclus           |
+| **Paiements**   | pawaPay + Stripe + Wave  | Mobile Money unifié + Carte bancaire     |
+| **Déploiement** | Vercel                   | CI/CD automatique, monorepo support      |
+| **Linting**     | ESLint + Prettier        | Standard industrie, robuste              |
+| **CI/CD**       | GitHub Actions           | Tests, releases, déploiements auto       |
 
 ---
 
@@ -69,118 +70,132 @@ nexteranga-stack/
 ### 🔐 Authentification (Phase 1 - Prioritaire)
 
 **Essentielles pour le MVP :**
+
 - [x] Email + Mot de passe
 - [x] OAuth (Google, GitHub)
-- [x] Vérification email via Resend
-- [x] Reset mot de passe
+- [ ] Vérification email via Resend
+- [ ] Reset mot de passe
 - [x] Sessions sécurisées
-- [x] Rate limiting intégré
+- [ ] Rate limiting intégré
 
 **À activer via feature flags :**
+
 - [ ] Two-Factor Authentication (2FA)
 - [ ] Passkeys (WebAuthn)
 - [ ] Magic Links
 
 ### 👥 Gestion utilisateurs (Phase 1)
 
-- [x] Profil utilisateur complet
-- [x] Avatar avec UploadThing
-- [x] Dashboard personnel avec shadcn/ui
-- [x] Paramètres de compte
+- [ ] Profil utilisateur complet
+- [ ] Avatar avec UploadThing
+- [ ] Dashboard personnel avec shadcn/ui
+- [ ] Paramètres de compte
 - [ ] Organisations/Teams (Phase 2)
 - [ ] Rôles et permissions avancés (Phase 2)
 
 ### 💳 Paiements (Phase 1 - Innovation clé)
 
 **pawaPay (Prioritaire - Mobile Money Afrique) :**
-- [x] API unifiée pour 9+ pays africains
-- [x] MTN Mobile Money (11 pays)
-- [x] Airtel Money (8 pays)
-- [x] Orange Money (3 pays via pawaPay)
-- [x] Vodacom M-Pesa (2 pays)
-- [x] Webhooks pour callbacks temps réel
-- [x] Vérification de statut des transactions
-- [x] Gestion des remboursements
-- [x] Interface de sélection de provider avec shadcn
+
+- [ ] API unifiée pour 9+ pays africains
+- [ ] MTN Mobile Money (11 pays)
+- [ ] Airtel Money (8 pays)
+- [ ] Orange Money (3 pays via pawaPay)
+- [ ] Vodacom M-Pesa (2 pays)
+- [ ] Webhooks pour callbacks temps réel
+- [ ] Vérification de statut des transactions
+- [ ] Gestion des remboursements
+- [ ] Interface de sélection de provider avec shadcn
 
 **Stripe (International - Carte bancaire) :**
-- [x] Checkout sessions
-- [x] Webhooks sécurisés
-- [x] Gestion abonnements récurrents
-- [x] Customer portal
+
+- [ ] Checkout sessions
+- [ ] Webhooks sécurisés
+- [ ] Gestion abonnements récurrents
+- [ ] Customer portal
 
 **Wave (Complément - UEMOA) :**
-- [x] Intégration directe Wave API
-- [x] Sénégal, Côte d'Ivoire, Bénin, Mali
-- [x] Fallback si pawaPay indisponible
+
+- [ ] Intégration directe Wave API
+- [ ] Sénégal, Côte d'Ivoire, Bénin, Mali
+- [ ] Fallback si pawaPay indisponible
 
 ### 📧 Notifications (Phase 1)
 
 **Templates React Email :**
-- [x] Email de bienvenue branded
-- [x] Vérification email avec lien
-- [x] Reset password sécurisé
-- [x] Code 2FA (si activé)
-- [x] Confirmation de paiement
-- [x] Reçu de transaction
+
+- [ ] Email de bienvenue branded
+- [ ] Vérification email avec lien
+- [ ] Reset password sécurisé
+- [ ] Code 2FA (si activé)
+- [ ] Confirmation de paiement
+- [ ] Reçu de transaction
 
 ### 🎨 Interface (Phase 1)
 
 **App Web (`apps/web`) :**
-- [x] Landing page moderne
-- [x] Sign in / Sign up avec shadcn
-- [x] Dashboard utilisateur
-- [x] Profil & Settings
-- [x] Page de paiement avec sélection provider
-- [x] Historique des transactions
+
+- [ ] Landing page moderne
+- [ ] Sign in / Sign up avec shadcn
+- [ ] Dashboard utilisateur
+- [ ] Profil & Settings
+- [ ] Page de paiement avec sélection provider
+- [ ] Historique des transactions
 - [ ] Pricing page (Phase 2)
 
 **Documentation (`apps/docs`) :**
-- [x] Getting Started
-- [x] Configuration guide
-- [x] API Reference
-- [x] Deployment guide
-- [x] Examples & Recipes
+
+- [ ] Getting Started
+- [ ] Configuration guide
+- [ ] API Reference
+- [ ] Deployment guide
+- [ ] Examples & Recipes
 
 ### 📦 Packages réutilisables (Phase 1)
 
 **`@nexteranga/ui` :**
-- [x] Tous les composants shadcn/ui
-- [x] Composants auth (LoginForm, SignupForm, SocialButtons)
-- [x] Composants payments (PaymentMethodSelector, MobileMoneyForm)
-- [x] Composants dashboard (ProfileCard, StatsCard, etc.)
-- [x] Hooks personnalisés
+
+- [/] Tous les composants shadcn/ui (Initial setup done)
+- [ ] Composants auth (LoginForm, SignupForm, SocialButtons)
+- [ ] Composants payments (PaymentMethodSelector, MobileMoneyForm)
+- [ ] Composants dashboard (ProfileCard, StatsCard, etc.)
+- [ ] Hooks personnalisés
 
 **`@nexteranga/auth` :**
-- [x] Configuration Better Auth complète
+
+- [/] Configuration Better Auth complète (Base setup done)
 - [x] Client-side hooks
-- [x] Plugins (organization, 2FA, passkey, admin)
+- [ ] Plugins (organization, 2FA, passkey, admin)
 - [x] Types TypeScript
 
 **`@nexteranga/database` :**
-- [x] Schema Prisma complet avec feature flags
+
+- [/] Schema Prisma complet avec feature flags (Basic schema done)
 - [x] Client Prisma singleton
 - [x] Migrations
-- [x] Seed data
+- [ ] Seed data
 
 **`@nexteranga/payments` :**
-- [x] Module pawaPay avec tous les providers
-- [x] Module Stripe complet
-- [x] Module Wave
-- [x] Types unifiés
-- [x] Webhook handlers
+
+- [ ] Module pawaPay avec tous les providers
+- [ ] Module Stripe complet
+- [ ] Module Wave
+- [ ] Types unifiés
+- [ ] Webhook handlers
 
 **`@nexteranga/emails` :**
-- [x] Templates React Email stylisés
-- [x] Composants d'email réutilisables
-- [x] Utilitaire d'envoi Resend
-- [x] Preview en développement
+
+- [ ] Templates React Email stylisés
+- [ ] Composants d'email réutilisables
+- [ ] Utilitaire d'envoi Resend
+- [ ] Preview en développement
 
 **`@nexteranga/storage` :**
-- [x] Configuration UploadThing
-- [x] Router avec middleware auth
-- [x] Hooks React
-- [x] Types
+
+- [ ] Configuration UploadThing
+- [ ] Router avec middleware auth
+- [ ] Hooks React
+- [ ] Types
 
 ---
 
@@ -194,13 +209,14 @@ nexteranga-stack/
 ✓ Configurer PNPM workspaces
 ✓ Setup Turborepo avec cache
 ✓ Configurer Changesets pour versioning
-✓ Setup Biome pour linting/formatting
+✓ Setup ESLint + Prettier pour linting/formatting
 ✓ Configurer Git hooks (Husky)
 ✓ Créer GitHub Actions (CI/CD)
 ✓ Initialiser tous les packages avec package.json
 ```
 
 **Livrables :**
+
 - Structure monorepo complète
 - `turbo.json` configuré
 - `pnpm-workspace.yaml`
@@ -209,59 +225,63 @@ nexteranga-stack/
 
 ---
 
-### ✅ **Étape 2 : Packages Core** (4-5h)
+### 🔄 **Étape 2 : Packages Core** (4-5h)
 
 ```bash
 # Actions - @nexteranga/database
-✓ Définir schema Prisma complet (User, Session, Payment, FeatureFlag)
+✓ Définir schema Prisma (User, Session, Account, Verification)
 ✓ Créer migrations initiales
-✓ Setup Prisma client singleton
-✓ Ajouter seed data
+✓ Setup Prisma client singleton (Pg Adapter)
+□ Ajouter seed data
 
 # Actions - @nexteranga/config
 ✓ Créer configs TypeScript partagées
-✓ Créer config Tailwind partagée
-✓ Créer config Biome partagée
+✓ Créer configs ESLint partagées
+□ Créer config Tailwind partagée
 
 # Actions - @nexteranga/utils
-✓ Utilitaires de validation
-✓ Formatters (date, currency, phone)
-✓ Constants (pays, devises, providers)
+✓ Utilitaire cn (Tailwind Merge)
+□ Utilitaires de validation
+□ Formatters (date, currency, phone)
+□ Constants (pays, devises, providers)
 ```
 
 **Livrables :**
+
 - Package `@nexteranga/database` fonctionnel
 - Package `@nexteranga/config` prêt
 - Package `@nexteranga/utils` utilisable
 
 ---
 
-### ✅ **Étape 3 : Auth & UI** (5-6h)
+### 🔄 **Étape 3 : Auth & UI** (5-6h)
 
 ```bash
 # Actions - @nexteranga/auth
-✓ Configurer Better Auth avec tous les plugins
-✓ Créer routes API
+✓ Configurer Better Auth (Base)
+□ Configurer tous les plugins (org, 2FA, etc.)
+□ Créer routes API
 ✓ Setup client-side hooks
-✓ Implémenter rate limiting
+□ Implémenter rate limiting
 
 # Actions - @nexteranga/ui
 ✓ Installer et configurer shadcn/ui
-✓ Créer tous les composants UI de base
-✓ Créer composants auth (forms, social buttons)
-✓ Créer composants dashboard
-✓ Créer hooks personnalisés (useSession, useUser)
-✓ Setup Storybook (optionnel)
+✓ Créer composant Button
+□ Créer composants auth (forms, social buttons)
+□ Créer composants dashboard
+□ Créer hooks personnalisés (useSession, useUser)
+□ Setup Storybook (optionnel)
 
 # Actions - apps/web (pages auth)
-✓ Page sign-in avec shadcn
-✓ Page sign-up avec validation
-✓ Page verify-email
-✓ Page reset-password
-✓ Layout auth
+□ Page sign-in avec shadcn
+□ Page sign-up avec validation
+□ Page verify-email
+□ Page reset-password
+□ Layout auth
 ```
 
 **Livrables :**
+
 - Package `@nexteranga/auth` complet
 - Package `@nexteranga/ui` avec tous les composants
 - Pages d'authentification fonctionnelles
@@ -272,8 +292,6 @@ nexteranga-stack/
 
 ```bash
 # Actions - @nexteranga/payments
-
-# Module pawaPay (prioritaire)
 □ Setup compte sandbox pawaPay
 □ Créer module pawapay/
   - deposit.ts (initier paiement)
@@ -312,6 +330,7 @@ nexteranga-stack/
 ```
 
 **Livrables :**
+
 - Package `@nexteranga/payments` avec 3 modules
 - Composants UI de paiement
 - Pages de checkout fonctionnelles
@@ -344,6 +363,7 @@ nexteranga-stack/
 ```
 
 **Livrables :**
+
 - Package `@nexteranga/emails` avec tous les templates
 - Package `@nexteranga/storage` fonctionnel
 - Upload fonctionnel dans l'app
@@ -390,6 +410,7 @@ nexteranga-stack/
 ```
 
 **Livrables :**
+
 - App web complète et polie
 - Documentation exhaustive
 - README.md principal
@@ -397,7 +418,7 @@ nexteranga-stack/
 
 ---
 
-### ✅ **Étape 7 : Tests & Déploiement** (4-5h)
+### 🔄 **Étape 7 : Tests & Déploiement** (4-5h)
 
 ```bash
 # Tests
@@ -437,6 +458,7 @@ nexteranga-stack/
 ```
 
 **Livrables :**
+
 - App déployée sur Vercel
 - Tests passant
 - Documentation de déploiement
@@ -464,26 +486,27 @@ nexteranga-stack/
 
 ### 📦 Code & Architecture
 
-- ✅ Monorepo Turborepo avec 8+ packages
-- ✅ Repository GitHub public avec MIT License
-- ✅ Documentation technique complète
-- ✅ .env.example pour chaque app/package
-- ✅ Scripts d'installation automatisés
-- ✅ CI/CD configuré (tests, lint, deploy)
-- ✅ Changesets pour versioning
+- [x] Monorepo Turborepo avec 8+ packages (5/8 created)
+- [x] Repository GitHub public avec MIT License
+- [ ] Documentation technique complète
+- [ ] .env.example pour chaque app/package
+- [x] Scripts d'installation automatisés
+- [x] CI/CD configuré (tests, lint, deploy)
+- [x] Changesets pour versioning
 
 ### 🌐 Applications déployées
 
-- ✅ App web sur Vercel (nexteranga-stack.vercel.app)
-- ✅ Documentation sur Vercel (docs.nexteranga-stack.vercel.app)
-- ✅ Base de données PostgreSQL (Neon ou Supabase)
-- ✅ Emails fonctionnels (Resend)
-- ✅ Storage fonctionnel (UploadThing)
-- ✅ Paiements en mode sandbox actifs
+- [ ] App web sur Vercel (nexteranga-stack.vercel.app)
+- [ ] Documentation sur Vercel (docs.nexteranga-stack.vercel.app)
+- [ ] Base de données PostgreSQL (Neon ou Supabase)
+- [ ] Emails fonctionnels (Resend)
+- [ ] Storage fonctionnel (UploadThing)
+- [ ] Paiements en mode sandbox actifs
 
 ### 📚 Documentation
 
 **README.md principal :**
+
 - Présentation du projet
 - Quick start (< 5 min)
 - Architecture monorepo
@@ -491,18 +514,20 @@ nexteranga-stack/
 - Contribution guidelines
 
 **Documentation site (`apps/docs`) :**
-- ✅ Installation complète
-- ✅ Configuration de chaque service
-- ✅ Guide des feature flags
-- ✅ API Reference pour chaque package
-- ✅ Exemples d'utilisation
-- ✅ Guides de déploiement
-- ✅ Troubleshooting & FAQ
-- ✅ Roadmap publique
+
+- [x] Installation complète
+- [ ] Configuration de chaque service
+- [ ] Guide des feature flags
+- [ ] API Reference pour chaque package
+- [ ] Exemples d'utilisation
+- [ ] Guides de déploiement
+- [ ] Troubleshooting & FAQ
+- [ ] Roadmap publique
 
 ### 🎨 Packages NPM (optionnel Phase 1)
 
 Si packages publics sur NPM :
+
 - `@nexteranga/ui`
 - `@nexteranga/auth`
 - `@nexteranga/payments`
@@ -515,12 +540,14 @@ Si packages publics sur NPM :
 ### Court terme (1-2 mois) - Phase 2
 
 **CLI Tool (`apps/cli`) :**
+
 - [ ] `nexteranga init` - Scaffold nouveau projet
 - [ ] `nexteranga add <package>` - Ajouter un package
 - [ ] `nexteranga setup` - Configuration interactive
 - [ ] `nexteranga deploy` - Déploiement simplifié
 
 **Fonctionnalités auth avancées :**
+
 - [ ] 2FA avec QR code
 - [ ] Passkeys (WebAuthn)
 - [ ] Magic Links
@@ -528,6 +555,7 @@ Si packages publics sur NPM :
 - [ ] Biométrie mobile
 
 **Organisations & Teams :**
+
 - [ ] Création d'organisations
 - [ ] Invitations membres
 - [ ] Rôles personnalisés
@@ -535,6 +563,7 @@ Si packages publics sur NPM :
 - [ ] Audit logs
 
 **Dashboard Analytics :**
+
 - [ ] Statistiques utilisateurs
 - [ ] Analytics paiements
 - [ ] Charts avec Recharts
@@ -544,6 +573,7 @@ Si packages publics sur NPM :
 ### Moyen terme (3-6 mois) - Phase 3
 
 **Admin Panel :**
+
 - [ ] Gestion utilisateurs
 - [ ] Gestion des paiements
 - [ ] Configuration feature flags UI
@@ -551,6 +581,7 @@ Si packages publics sur NPM :
 - [ ] Support tickets
 
 **API Publique :**
+
 - [ ] REST API complète
 - [ ] API Keys management
 - [ ] Rate limiting par API key
@@ -558,6 +589,7 @@ Si packages publics sur NPM :
 - [ ] SDKs (TypeScript, Python)
 
 **Intégrations supplémentaires :**
+
 - [ ] Notification push (Firebase)
 - [ ] SMS avec Twilio/Africa's Talking
 - [ ] Analytics avec PostHog
@@ -565,6 +597,7 @@ Si packages publics sur NPM :
 - [ ] Customer support avec Intercom
 
 **Marketplace :**
+
 - [ ] Système de plugins
 - [ ] Thèmes personnalisables
 - [ ] Templates de landing pages
@@ -573,6 +606,7 @@ Si packages publics sur NPM :
 ### Long terme (6-12 mois) - Phase 4
 
 **Mobile Apps :**
+
 - [ ] React Native app (iOS/Android)
 - [ ] Authentification biométrique
 - [ ] Push notifications natives
@@ -580,18 +614,21 @@ Si packages publics sur NPM :
 - [ ] App Store & Play Store
 
 **AI & Automation :**
+
 - [ ] Chatbot support (OpenAI)
 - [ ] Détection de fraude IA
 - [ ] Recommandations personnalisées
 - [ ] Auto-scaling intelligent
 
 **Web3 & Crypto :**
+
 - [ ] Wallet connect
 - [ ] Crypto payments
 - [ ] NFT gating
 - [ ] Token rewards
 
 **Internationalization :**
+
 - [ ] Multi-langue (i18n)
 - [ ] Multi-devises
 - [ ] Localisation dates/nombres
@@ -606,33 +643,33 @@ Table `FeatureFlag` dans la base de données pour activer/désactiver les foncti
 ```typescript
 interface FeatureFlags {
   // Auth
-  emailPasswordAuth: boolean;        // ✅ true (MVP)
-  oauthProviders: string[];          // ✅ ["google", "github"] (MVP)
-  magicLinkAuth: boolean;            // ⏸️ false (Phase 2)
-  twoFactorAuth: boolean;            // ⏸️ false (Phase 2)
-  passkeysAuth: boolean;             // ⏸️ false (Phase 2)
-  
+  emailPasswordAuth: boolean; // ✅ true (MVP)
+  oauthProviders: string[]; // ✅ ["google", "github"] (MVP)
+  magicLinkAuth: boolean; // ⏸️ false (Phase 2)
+  twoFactorAuth: boolean; // ⏸️ false (Phase 2)
+  passkeysAuth: boolean; // ⏸️ false (Phase 2)
+
   // Organizations
-  organizationsEnabled: boolean;     // ⏸️ false (Phase 2)
-  rolesEnabled: boolean;             // ✅ true (MVP - basic)
-  permissionsEnabled: boolean;       // ⏸️ false (Phase 2 - advanced)
-  
+  organizationsEnabled: boolean; // ⏸️ false (Phase 2)
+  rolesEnabled: boolean; // ✅ true (MVP - basic)
+  permissionsEnabled: boolean; // ⏸️ false (Phase 2 - advanced)
+
   // Payments
-  stripeIntegration: boolean;        // ✅ true (MVP)
-  pawapayIntegration: boolean;       // ✅ true (MVP)
-  waveIntegration: boolean;          // ✅ true (MVP)
-  
+  stripeIntegration: boolean; // ✅ true (MVP)
+  pawapayIntegration: boolean; // ✅ true (MVP)
+  waveIntegration: boolean; // ✅ true (MVP)
+
   // Features
-  emailVerification: boolean;        // ✅ true (MVP)
-  passwordReset: boolean;            // ✅ true (MVP)
-  rateLimitingEnabled: boolean;      // ✅ true (MVP)
-  fileUploadEnabled: boolean;        // ✅ true (MVP)
-  
+  emailVerification: boolean; // ✅ true (MVP)
+  passwordReset: boolean; // ✅ true (MVP)
+  rateLimitingEnabled: boolean; // ✅ true (MVP)
+  fileUploadEnabled: boolean; // ✅ true (MVP)
+
   // Advanced (Phase 2+)
-  analyticsEnabled: boolean;         // ⏸️ false
-  notificationsEnabled: boolean;     // ⏸️ false
-  webhooksEnabled: boolean;          // ⏸️ false
-  apiKeysEnabled: boolean;           // ⏸️ false
+  analyticsEnabled: boolean; // ⏸️ false
+  notificationsEnabled: boolean; // ⏸️ false
+  webhooksEnabled: boolean; // ⏸️ false
+  apiKeysEnabled: boolean; // ⏸️ false
 }
 ```
 
@@ -654,6 +691,7 @@ interface FeatureFlags {
 ### ✅ Critères Fonctionnels
 
 **Authentification :**
+
 - [ ] Sign-up avec email fonctionne
 - [ ] Sign-in avec email fonctionne
 - [ ] OAuth Google fonctionne
@@ -664,6 +702,7 @@ interface FeatureFlags {
 - [ ] Logout fonctionne
 
 **Paiements :**
+
 - [ ] pawaPay : Paiement test MTN réussi
 - [ ] pawaPay : Paiement test Airtel réussi
 - [ ] pawaPay : Webhook reçu et traité
@@ -674,12 +713,14 @@ interface FeatureFlags {
 - [ ] Statut des paiements mis à jour en temps réel
 
 **Storage & Emails :**
+
 - [ ] Upload d'avatar fonctionne
 - [ ] Avatar affiché correctement
 - [ ] Tous les emails sont bien reçus
 - [ ] Templates d'emails bien stylisés
 
 **Dashboard :**
+
 - [ ] Dashboard affiche les bonnes données utilisateur
 - [ ] Profile éditable
 - [ ] Settings sauvegardés
@@ -715,19 +756,19 @@ interface FeatureFlags {
 ```css
 :root {
   /* Primary - Bleu tech */
-  --primary: 217 91% 60%;           /* #3B82F6 */
+  --primary: 217 91% 60%; /* #3B82F6 */
   --primary-foreground: 0 0% 100%;
-  
+
   /* Secondary - Ambre chaleureux (teranga) */
-  --secondary: 38 92% 50%;          /* #F59E0B */
+  --secondary: 38 92% 50%; /* #F59E0B */
   --secondary-foreground: 0 0% 100%;
-  
+
   /* Accent - Vert succès */
-  --accent: 142 76% 36%;            /* #10B981 */
+  --accent: 142 76% 36%; /* #10B981 */
   --accent-foreground: 0 0% 100%;
-  
+
   /* Neutral - Slate */
-  --muted: 215 20% 65%;             /* #94A3B8 */
+  --muted: 215 20% 65%; /* #94A3B8 */
   --muted-foreground: 215 16% 47%;
 }
 ```
@@ -741,6 +782,7 @@ interface FeatureFlags {
 ### Logo (à créer)
 
 **Concept** :
+
 - Fusion d'un circuit électronique (tech) et d'un motif africain (teranga)
 - Forme : Hexagone (stabilité) + motifs géométriques africains
 - Couleurs : Dégradé bleu → ambre
@@ -769,13 +811,13 @@ interface FeatureFlags {
 
 ## 🚨 Risques & Mitigation
 
-| Risque | Impact | Probabilité | Mitigation |
-|--------|--------|-------------|------------|
-| pawaPay sandbox indisponible | Moyen | Faible | Utiliser Wave en fallback |
-| Complexité monorepo | Moyen | Moyen | Documentation détaillée + scripts |
-| Dépassement de temps | Élevé | Moyen | Prioriser features essentielles |
-| Intégration Vercel monorepo | Moyen | Faible | Bien suivre la doc Vercel |
-| Coûts services (Resend, UploadThing) | Faible | Faible | Tiers gratuits suffisants pour MVP |
+| Risque                               | Impact | Probabilité | Mitigation                         |
+| ------------------------------------ | ------ | ----------- | ---------------------------------- |
+| pawaPay sandbox indisponible         | Moyen  | Faible      | Utiliser Wave en fallback          |
+| Complexité monorepo                  | Moyen  | Moyen       | Documentation détaillée + scripts  |
+| Dépassement de temps                 | Élevé  | Moyen       | Prioriser features essentielles    |
+| Intégration Vercel monorepo          | Moyen  | Faible      | Bien suivre la doc Vercel          |
+| Coûts services (Resend, UploadThing) | Faible | Faible      | Tiers gratuits suffisants pour MVP |
 
 ---
 
@@ -867,3 +909,4 @@ pnpm init
 
 # 3. Créer la structure de base
 mkdir -p apps/{web,docs,cli} packages/{ui,auth,database,payments,emails,
+```
