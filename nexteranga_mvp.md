@@ -259,8 +259,8 @@ nexteranga-stack/
 ```bash
 # Actions - @nexteranga/auth
 ✓ Configurer Better Auth (Base)
-□ Configurer tous les plugins (org, 2FA, etc.)
-□ Créer routes API
+✓ Configurer tous les plugins (org, 2FA, etc.)
+✓ Créer routes API
 ✓ Setup client-side hooks
 □ Implémenter rate limiting
 

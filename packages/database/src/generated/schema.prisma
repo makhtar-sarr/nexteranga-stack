@@ -8,21 +8,65 @@ datasource db {
 }
 
 model User {
-  id            String         @id @default(cuid())
-  name          String?
-  email         String         @unique
-  emailVerified DateTime?
-  image         String?
-  role          String         @default("user")
-  status        String         @default("active")
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  sessions      Session[]
-  accounts      Account[]
-  payments      Payment[]
-  subscriptions Subscription[]
+  id                   String         @id @default(cuid())
+  name                 String?
+  email                String         @unique
+  emailVerified        DateTime?
+  image                String?
+  role                 String         @default("user")
+  status               String         @default("active")
+  twoFactorEnabled     Boolean?
+  twoFactorSecret      String?
+  twoFactorBackupCodes String?
+  createdAt            DateTime       @default(now())
+  updatedAt            DateTime       @updatedAt
+  sessions             Session[]
+  accounts             Account[]
+  payments             Payment[]
+  subscriptions        Subscription[]
+  members              Member[]
+  invitations          Invitation[]
 
   @@map("user")
+}
+
+model Organization {
+  id          String       @id
+  name        String
+  slug        String?      @unique
+  logo        String?
+  createdAt   DateTime
+  metadata    String?
+  members     Member[]
+  invitations Invitation[]
+
+  @@map("organization")
+}
+
+model Member {
+  id             String       @id
+  organizationId String
+  userId         String
+  role           String
+  createdAt      DateTime
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("member")
+}
+
+model Invitation {
+  id             String       @id
+  organizationId String
+  email          String
+  role           String?
+  status         String
+  expiresAt      DateTime
+  inviterId      String
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user           User         @relation(fields: [inviterId], references: [id], onDelete: Cascade)
+
+  @@map("invitation")
 }
 
 model Payment {

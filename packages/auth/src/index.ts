@@ -1,6 +1,7 @@
 import { db } from "@nexteranga/database";
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
+import { organization, twoFactor } from "better-auth/plugins";
 
 export const auth: ReturnType<typeof betterAuth> = betterAuth({
   database: prismaAdapter(db, {
@@ -19,4 +20,5 @@ export const auth: ReturnType<typeof betterAuth> = betterAuth({
       clientSecret: process.env.GITHUB_CLIENT_SECRET || "",
     },
   },
+  plugins: [organization(), twoFactor()],
 });
