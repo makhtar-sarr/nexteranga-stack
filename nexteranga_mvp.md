@@ -225,25 +225,25 @@ nexteranga-stack/
 
 ---
 
-### 🔄 **Étape 2 : Packages Core** (4-5h)
+### ✅ **Étape 2 : Packages Core** (4-5h)
 
 ```bash
 # Actions - @nexteranga/database
 ✓ Définir schema Prisma (User, Session, Account, Verification)
 ✓ Créer migrations initiales
 ✓ Setup Prisma client singleton (Pg Adapter)
-□ Ajouter seed data
+✓ Ajouter seed data
 
 # Actions - @nexteranga/config
 ✓ Créer configs TypeScript partagées
 ✓ Créer configs ESLint partagées
-□ Créer config Tailwind partagée
+✓ Créer config Tailwind partagée (Tailwind v4 CSS-first)
 
 # Actions - @nexteranga/utils
 ✓ Utilitaire cn (Tailwind Merge)
-□ Utilitaires de validation
-□ Formatters (date, currency, phone)
-□ Constants (pays, devises, providers)
+✓ Utilitaires de validation
+✓ Formatters (date, currency, phone)
+✓ Constants (pays, devises, providers)
 ```
 
 **Livrables :**
