@@ -1,6 +1,8 @@
 {
   "extends": "@nexteranga/config/typescript/base",
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "declaration": false,
     "declarationMap": false,
     "baseUrl": ".",

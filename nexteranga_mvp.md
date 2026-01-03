@@ -74,9 +74,9 @@ nexteranga-stack/
 - [x] Email + Mot de passe
 - [x] OAuth (Google, GitHub)
 - [ ] Vérification email via Resend
-- [ ] Reset mot de passe
+- [x] Reset mot de passe
 - [x] Sessions sécurisées
-- [ ] Rate limiting intégré
+- [x] Rate limiting intégré (Basic setup)
 
 **À activer via feature flags :**
 
@@ -155,22 +155,22 @@ nexteranga-stack/
 
 **`@nexteranga/ui` :**
 
-- [/] Tous les composants shadcn/ui (Initial setup done)
-- [ ] Composants auth (LoginForm, SignupForm, SocialButtons)
+- [x] Tous les composants shadcn/ui (Initial setup done)
+- [x] Composants auth (LoginForm, SignupForm, SocialButtons)
 - [ ] Composants payments (PaymentMethodSelector, MobileMoneyForm)
 - [ ] Composants dashboard (ProfileCard, StatsCard, etc.)
 - [ ] Hooks personnalisés
 
 **`@nexteranga/auth` :**
 
-- [/] Configuration Better Auth complète (Base setup done)
+- [x] Configuration Better Auth complète (Base setup done)
 - [x] Client-side hooks
-- [ ] Plugins (organization, 2FA, passkey, admin)
+- [x] Plugins (organization, 2FA, passkey, admin)
 - [x] Types TypeScript
 
 **`@nexteranga/database` :**
 
-- [/] Schema Prisma complet avec feature flags (Basic schema done)
+- [x] Schema Prisma complet avec feature flags (Basic schema done)
 - [x] Client Prisma singleton
 - [x] Migrations
 - [ ] Seed data
@@ -259,25 +259,25 @@ nexteranga-stack/
 ```bash
 # Actions - @nexteranga/auth
 ✓ Configurer Better Auth (Base)
-□ Configurer tous les plugins (org, 2FA, etc.)
-□ Créer routes API
+✓ Configurer tous les plugins (org, 2FA, etc.)
+✓ Créer routes API
 ✓ Setup client-side hooks
 □ Implémenter rate limiting
 
 # Actions - @nexteranga/ui
 ✓ Installer et configurer shadcn/ui
 ✓ Créer composant Button
-□ Créer composants auth (forms, social buttons)
-□ Créer composants dashboard
-□ Créer hooks personnalisés (useSession, useUser)
+✓ Créer composants auth (forms, social buttons)
+✓ Créer composants dashboard
+✓ Créer hooks personnalisés (useSession, useUser)
 □ Setup Storybook (optionnel)
 
 # Actions - apps/web (pages auth)
-□ Page sign-in avec shadcn
-□ Page sign-up avec validation
-□ Page verify-email
-□ Page reset-password
-□ Layout auth
+✓ Page sign-in avec shadcn
+✓ Page sign-up avec validation
+✓ Page verify-email
+✓ Page reset-password
+✓ Layout auth
 ```
 
 **Livrables :**

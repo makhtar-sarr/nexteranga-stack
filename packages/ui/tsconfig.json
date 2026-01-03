@@ -2,6 +2,8 @@
   "extends": "@nexteranga/config/typescript/react-library",
   "compilerOptions": {
     "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "paths": {
       "@nexteranga/ui/*": ["./src/*"]
     }

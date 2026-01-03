@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nexteranga/database": "workspace:*",
-    "better-auth": "^1.1.20"
+    "better-auth": "^1.4.9"
   },
   "devDependencies": {
     "@nexteranga/config": "workspace:*",
