@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
+    "@nexteranga/auth": "workspace:*",
     "@nexteranga/utils": "workspace:*",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
@@ -36,6 +37,7 @@
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
     "eslint": "^9.32.0",
+    "next": "16.0.10",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.9.2"
   },

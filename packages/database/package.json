@@ -1,6 +1,7 @@
 {
   "name": "@nexteranga/database",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -18,6 +19,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.2.0",
     "@prisma/client": "^7.2.0",
+    "@prisma/client-runtime-utils": "7.2.0",
     "pg": "^8.16.3"
   },
   "devDependencies": {
